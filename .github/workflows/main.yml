@@ -17,8 +17,10 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_SECRET }}
-          base: header
+          base: ""
           plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
           plugin_languages: yes
-          config_order: base.header, isocalendar, languages
+          plugin_achievements: yes
+          config_order: base.header, isocalendar, languages, achievements
     
